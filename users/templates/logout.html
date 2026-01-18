@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Logged Out Page{% endblock %}
+
+{% block content %}
+<div class="container text-center mt-5">
+    <h2 class="fw-bold">You have been logged out</h2>
+    <p class="text-muted">Thank you for using TodoManager</p>
+    <a href="{% url 'login' %}" class="btn btn-primary mt-3">Login Again</a>
+</div>
+{% endblock %}

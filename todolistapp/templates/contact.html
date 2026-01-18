@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact Page
+{% endblock title %}
+
+{% comment %} {% block headline %} Welcome to {{ page }}. {% endblock headline %} {% endcomment %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body p-4 p-md-5">
+
+                    <h2 class="text-center mb-2 fw-bold">Contact Us</h2>
+                    <p class="text-center text-muted mb-4">
+                        We’d love to hear from you
+                    </p>
+
+                    <div class="row g-4">
+
+                        <!-- Email -->
+                        <div class="col-md-4">
+                            <div class="border rounded-4 p-4 text-center h-100">
+                                <div class="fs-1 mb-2">📧</div>
+                                <h5 class="fw-semibold">Email</h5>
+                                <p class="text-muted mb-0">
+                                    support@todomanager.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Mobile -->
+                        <div class="col-md-4">
+                            <div class="border rounded-4 p-4 text-center h-100">
+                                <div class="fs-1 mb-2">📞</div>
+                                <h5 class="fw-semibold">Mobile</h5>
+                                <p class="text-muted mb-0">
+                                    +91 98AB5 4XYZ0
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="col-md-4">
+                            <div class="border rounded-4 p-4 text-center h-100">
+                                <div class="fs-1 mb-2">📍</div>
+                                <h5 class="fw-semibold">Address</h5>
+                                <p class="text-muted mb-0">
+                                    KIET,<br>
+                                    Muradnagar, Ghaziabad<br>
+                                    Uttar Pradesh, India
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock content %}
