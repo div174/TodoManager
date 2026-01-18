@@ -45,7 +45,7 @@ Because this project uses environment variables for security, it will not run "o
 ```bash
 git clone [https://github.com/div174/TodoManager.git](https://github.com/div174/TodoManager.git)
 cd TodoManager
-2️⃣ Create & activate virtual environment
+### 2️⃣ Create & activate virtual environment
 ```Bash
 # Create
 python -m venv myenv
@@ -55,10 +55,10 @@ myenv\Scripts\activate
 
 # Activate (Linux / macOS)
 source myenv/bin/activate
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 ```Bash
 pip install -r requirements.txt
-4️⃣ Configure Environment Variables (Crucial!)
+### 4️⃣ Configure Environment Variables (Crucial!)
 Create a file named .env in the root directory (the same folder as manage.py). Add the following content:
 
 ```Plaintext
@@ -66,11 +66,11 @@ SECRET_KEY=your-random-secret-key-here
 DEBUG=True
 (Note: Replace your-random-secret-key-here with a secure key.)
 
-5️⃣ Apply migrations
+### 5️⃣ Apply migrations
 ```Bash
 python manage.py makemigrations
 python manage.py migrate
-6️⃣ Run the development server
+### 6️⃣ Run the development server
 ```Bash
 python manage.py runserver
 Visit your app at: http://127.0.0.1:8000/
